@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 body{
@@ -123,7 +123,6 @@ color: #5DC791;
     margin: 3rem auto;
     max-width: 100%;
     grid-template-columns: repeat(5, 1fr);
-    background-color: #F1EFED;
 }
 
 .tarjeta{
@@ -136,12 +135,13 @@ color: #5DC791;
 }
 
 .tarjeta__img{
-    width: 80%;
+    width: 200px;
     
 }
 
 .contenedor_tarjeta_img{
     overflow:hidden;
+    object-fit: cover;
 
 }
 .contenedor_tarjeta_img:hover .imagen {
@@ -233,7 +233,6 @@ footer h5 {
 
 
 .trabajos{
-        background-color:#F1EFED ;
         height: auto;
         padding-left: 0%;
         padding-right: 0%;
@@ -255,7 +254,8 @@ footer h5 {
         grid-template-columns: repeat(2, 1fr);
        height: auto;
        padding-top: 50px;
-       padding-bottom: 20px;
+       padding-bottom: 0px;
+      margin-bottom: 0px;
 
 }
 
@@ -335,13 +335,16 @@ footer h5 {
     padding-left: 30px;
     line-height: 20px;
     justify-self: center;
-    height: 200px;
     align-self: center;
     justify-content: center;
     padding-left: 40%;
+
+}
+
+.frase_trabajos h2{
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 
