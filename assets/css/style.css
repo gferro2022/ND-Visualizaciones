@@ -9,6 +9,8 @@
 
 body{
     position: relative;
+    width: 100%;
+    height: 900px;
 }
 
 a{
@@ -43,63 +45,16 @@ a:hover{
     line-height: 1;
 }
 
+header{
+    height: 400px;
+}
+
 
 .logo p a{
     text-decoration: none;
     color: white;
 }
 
-.navbar{
-    width: 100%;
-    height: 60px;
-    background-color: #161717 ;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 20;
-
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-}
-
-.navbar ul li{
-    padding: 10px;
-    
-}
-
-
-.navbar ul li:hover{
-    border-bottom: #5DC791 solid 2px;
-    color: #5DC791;
-}
-
-.navbar ul li:active{
-    border-bottom: #5DC791 solid 2px;
-    color: #5DC791;
-}
-
-.navbar ul li:visited{
-    border-bottom: #5DC791 solid 2px;
-    color: #5DC791;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-
-}
-
-.logo p {
-    width: 200px;
-    color: white;
-    padding-left: 20px;
-}
 
 .logo p a:hover {
 color: #5DC791;
@@ -123,29 +78,14 @@ color: #5DC791;
 .redes{
     margin-right: 20px;
 }
-.headerImg{
-    background-image: url("../img/ezgif-5-f37bf17f8c.gif");
-    height: 400px ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
-
-.headerImg h1 {
-    color: white;
-    text-align: center;
-}
 
 .cards{
     display: grid;
     grid-gap: 0px;
     margin: 3rem auto;
     max-width: 100%;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .tarjeta{
@@ -154,7 +94,7 @@ color: #5DC791;
     align-items: center ;
     border: 0.6px solid rgb(0, 0, 0);
     padding: 44px;
-    width: 25vw;
+
 }
 
 .tarjeta__img{
@@ -236,7 +176,7 @@ line-height: 12px;
     background-color:#F1EFED ;
     height: 250px;
     padding-left: 20%;
-    display: block;
+    position: relative;
     padding-top: 30px;
 }
 
@@ -276,22 +216,17 @@ footer h5 {
     }
 
 
-
-
-
-
 .t2{
     z-index: 1;
     display: grid;
         grid-gap: 0px;
         margin: 3rem auto;
         max-width: 100%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
        height: auto;
        padding-top: 50px;
        padding-bottom: 0px;
       margin-bottom: 0px;
-
 }
 
 .t2_2{
@@ -321,7 +256,6 @@ footer h5 {
        align-items: flex-start;
 
 }
-
 
 
 .trabajos_flecha{
@@ -366,13 +300,21 @@ footer h5 {
 
 }
 .frase_trabajos{
-    width: 75vw;
-    padding-left: 30px;
     line-height: 20px;
     justify-self: center;
     align-self: center;
-    justify-content: center;
-    padding-left: 40%;
+
+}
+
+.frase_trabajos_i1{
+    line-height: 20px;
+    justify-self: center;
+    align-self: center;
+}
+.frase_trabajos_i2{
+    line-height: 20px;
+    justify-self: center;
+    align-self: center;
 
 }
 
@@ -382,6 +324,19 @@ footer h5 {
     font-size: 20px;
 }
 
+.frase_trabajo_i1 h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.frase_trabajo_i2 h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+}
+   
 
 .frase_trabajos2{
     width: 65vw;
@@ -530,29 +485,76 @@ img .btn-flecha{
     }
 
  
+    @media (max-width: 1000px) {
+        .cards{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .t2{
+                grid-template-columns: repeat(3, 1fr);
+        }
+        .frase_trabajos_i1{
+            display: none;
+        }
+        .frase_trabajos_i2{
+            padding-left: 40px;
+        }
+
+        .frase_trabajos_i3{
+            display: none;
+        }
+
+        
+        .trabajos_flecha {
+            width: unset;}
+        }
+
+         
+    @media (max-width: 768px) {
+
+        .t2{
+                grid-template-columns: repeat(3, 1fr);
+                width: 768px;
+                max-width: 727px;
+
+        }
+        }
+
+        @media (max-width: 576px) {
+
+
+            .cards{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .t2{
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+        }
+        .trabajos_flecha {
+            width: unset;}
+
+            .frase_trabajos_i1{
+                display: none;
+            }
+
+            .frase_trabajos_i3{
+                display: none;
+            }
+        
+        
+           
 
     @media (max-width: 400px) {
-
-        .navbar{
+        .t2{
             width: 100%;
-            height: 80px;
-            background-color: #161717;
-            display: flex;
-            align-items: stretch;
-            justify-content: space-between;
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            z-index: 20;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-content: stretch;
-            flex-direction: column
-        
+           
+    }
+
+        .frase_trabajos_i1{
+            display: none;
         }
-        .headerImg {
-            height: 338px;
-            background-size: auto;
+
+        .frase_trabajos_i3{
+            display: none;
         }
 
         .inicio h1 {
@@ -572,7 +574,6 @@ img .btn-flecha{
             height: 30px;
             margin: 0;
             
-
         }
         .logo p{
             padding-top: 10px;
@@ -586,18 +587,10 @@ img .btn-flecha{
  
 
         }
+    }
 
 
-.navbar ul li a {
-    font-size: 13px;
-    height: 30px;
-    width: 100%;
-    
-}
 
-.navbar ul{
-    justify-content: flex-end
-}
 .inicio {
     background-color: #F1EFED;
     height: 229px;
@@ -645,7 +638,9 @@ footer h5 {
 
 
 .trabajos_flecha {
-    width: 51vw;}
+    width: 51vw;
+padding-right: 38px;
+}
 
 
 
@@ -662,17 +657,14 @@ footer h5 {
     grid-gap: 0px;
     margin: 20px auto;
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center
 }
 
 .tarjeta{
     width: 90%;
 }
 
-.t2 {
 
-    grid-template-columns: repeat(1, 1fr);
-
-}
 
 .nosotros_img img {
     width: 345px;
@@ -692,4 +684,3 @@ footer h5 {
 }
 
 }
-
