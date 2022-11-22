@@ -10,7 +10,7 @@
 body{
     position: relative;
     width: 100%;
-    height: 900px;
+    height: 100%;
 }
 
 a{
@@ -22,6 +22,26 @@ a:hover{
     color:#5DC791;
 }
 
+a:active{
+    color:white;
+    background-color:#5DC791;
+}
+
+a:visited{
+    color:white;
+    background-color:#5DC791;
+}
+
+
+/*main de index*/
+
+.inicio{
+    background-color:#F1EFED ;
+    height: 250px;
+    padding-left: 20%;
+    position: relative;
+    padding-top: 30px;
+}
 .inicio h6{
     color:#5DC791;
     font-family: 'Roboto', sans-serif;
@@ -130,6 +150,7 @@ button.btn:link {
     background-color: #5DC791;
     color: black;
 }
+
 .tarjeta__titulo{
     font-size: 14px;
     margin: 5px 0px;
@@ -171,14 +192,6 @@ line-height: 12px;
 }
 
 
-/*main de index*/
-.inicio{
-    background-color:#F1EFED ;
-    height: 250px;
-    padding-left: 20%;
-    position: relative;
-    padding-top: 30px;
-}
 
 
 /*main de trabajos*/
@@ -195,6 +208,9 @@ footer{
     justify-content: center;
     bottom: 0px;
     background-color: #161717;
+    position: fixed;
+    left: 0px;
+    width: 100%;
 }
 
 
@@ -203,9 +219,6 @@ footer h5 {
     font-size: 14px;
 }
 
-.btn a{
-    color:white;
-}
 
 .trabajos{
         height: auto;
@@ -563,8 +576,8 @@ img .btn-flecha{
         }
 
         .inicio h2 {
-            font-size: 21px;
-            line-height: 1.5;
+            font-size: 16px;
+            line-height: 1;
         }
         .logo {
             width: 168px;
@@ -587,17 +600,18 @@ img .btn-flecha{
  
 
         }
+        .inicio {
+            background-color: #F1EFED;
+            height: 229px;
+            padding-left: 8%;
+            display: block;
+            padding-top: 30px;
+        }
     }
 
 
 
-.inicio {
-    background-color: #F1EFED;
-    height: 229px;
-    padding-left: 20%;
-    display: block;
-    padding-top: 30px;
-}
+
   
 
 footer h5 {
