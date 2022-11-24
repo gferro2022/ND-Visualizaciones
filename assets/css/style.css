@@ -28,7 +28,6 @@ a:active{
 
 a:visited{
     color:#5DC791;
-    
 }
 
 
@@ -87,7 +86,6 @@ main{
     font-size: 1rem;
 
 }
-
 
 
 .redes img {
@@ -195,10 +193,7 @@ line-height: 12px;
 }
 
 
-
-
 /*main de trabajos*/
-
 
 
 footer{
@@ -545,6 +540,7 @@ img .btn-flecha{
                 grid-template-columns: repeat(2, 1fr);
                 width: 100%;
         }
+     
         .trabajos_flecha {
             width: unset;}
 
