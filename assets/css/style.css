@@ -9,8 +9,13 @@
 
 body{
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100vh;
+}
+
+.w-100 {
+    width: 100vw!important;
+    height: auto;
 }
 
 a{
@@ -35,16 +40,17 @@ a:visited{
 
 .inicio{
     background-color:#F1EFED ;
-    height: clamp(250px, 40%,  400px);
+    height: 30vh;
     padding-left: 20%;
-    position: relative;
+    position: absolute;
     padding-top: 30px;
+    bottom: 14vh;
 }
 .inicio h6{
     color:#5DC791;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: clamp(1.5rem, 1vw, 2rem);
+    font-size: clamp(1rem, 1vw, 2rem);
     line-height: 1;
     
 }
@@ -60,19 +66,25 @@ a:visited{
 .inicio h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: clamp(2rem, 3.5vw, 5rem);
+    font-size: clamp(1.5rem, 3.5vw, 5rem);
     text-transform: uppercase;
-    line-height: .7;
+    line-height: 1;
+    width: 300px;
 }
 
 header{
-    height: 300px;
+    height: 50vh;
 }
 main{
     width: 100%;
     height: 20vh;
 }
 
+main .trabajos{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
 .navbar-brand{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -591,13 +603,32 @@ img .btn-flecha{
  
 
         }
+
         .inicio {
             background-color: #F1EFED;
-            height: 229px;
+            height: 50vh;
             padding-left: 8%;
             display: block;
-            padding-top: 30px;
+            padding-top: 13vh;
         }
+
+        .tarjeta__img {
+            width: 240px;
+        }
+
+
+        #carouselExampleSlidesOnly{
+            top: 8vh;
+        }
+
+        .frase_trabajos_i2 h2 {
+            line-height: 1;
+            font-size: 20px;
+        }
+    .trabajos{
+    padding-bottom: 105px;
+    }
+        
     }
 
 
