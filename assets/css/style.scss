@@ -1,16 +1,10 @@
-
+@import "reset.scss";
     @import "fonts.scss";
     @import "navbar.scss";
-    @import "reset.scss";
-    @import "footer.scss";
-    @import "variables.scss";
     @import "header.scss";
+    @import "variables.scss";
+    @import "footer.scss";
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     
     body{
         position: relative;
