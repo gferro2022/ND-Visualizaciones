@@ -1,0 +1,24 @@
+.w-100 {
+    width: 100vw!important;
+    height: auto;
+}
+header{
+    height: 50vh;
+}
+.headerImg{
+    background-image: url("../img/ezgif-5-f37bf17f8c.gif");
+    height: 400px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+& h1 {
+    color: white;
+    text-align: center;
+}
+}
+
+
