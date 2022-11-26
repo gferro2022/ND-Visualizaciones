@@ -83,19 +83,6 @@ main .trabajos{
     height: auto;
     padding-bottom: 20px;
 }
-.navbar-brand{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    margin-left: 20px;
-    font-size: 1rem;
-}
-
-.offcanvas-header{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-
-}
 
 
 .redes img {
