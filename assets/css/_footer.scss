@@ -1,0 +1,20 @@
+footer{
+    display: flex;
+    align-items: center;
+    background-image: url(../img/mapa.png);
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    bottom: 0px;
+    background-color: #161717;
+    position: fixed;
+    left: 0px;
+    width: 100%;
+}
+
+
+footer h5 {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
