@@ -5,24 +5,7 @@
     @import "variables.scss";
     @import "footer.scss";
 
-    
 
-
-    a{
-        text-decoration: unset;
-        color:black;
-        &:hover{
-            color:#5DC791;
-
-        }
-        &active{
-            color:white;
-        }
-        &:visited{
-            color:#5DC791;
-        }
-    }
-    
 
     
     .inicio{
@@ -113,25 +96,6 @@
     }
     
 
-    button.btn{
-        &:active {
-            background-color: #5DC791;
-            color: black;
-        
-        }
-        
-        &:link {
-            background-color: #5DC791;
-            color: black;
-        }
-
-    }
-    .btn{
-        background-color:black;
-        padding: 8px 12px;
-        color: white;
-        border: 1px solid black; 
-    }
     
     
     .tarjeta__titulo{
