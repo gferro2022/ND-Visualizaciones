@@ -3,12 +3,26 @@
     @import "navbar.scss";
     @import "header.scss";
     @import "variables.scss";
-    @import "cards.scss";
     @import "footer.scss";
+    @import "cards.scss";
 
+/*
+    $breakpoints: (
+        sm : 400px,
+            lg : 768px,
+            md : 576px,
+           bg : 1024px,
+           xl : 1280px,
+           );
+        
+           @mixin media-up ($breakpoint){
+               @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+                @content;
+               }
+           } 
+           
+    */
 
-
-    
     .inicio{
         background-color:$colortercero ;
         height: 30vh;
@@ -41,30 +55,6 @@
         }
     }
 
-    
-
-
-    
-
-
-    
-    
-
-    
-    
- 
-    
-
-    
-
-    
-   
-         
-    
- 
-    
-    
-    
     
     .t2_2{
         z-index: 1;
@@ -208,6 +198,11 @@
         padding-top: 10px;
         border-top: $colorcuarto solid 1px;
         align-items: center;
+        @media (max-width: $small){
+         width: 370px;
+           
+        }
+          
         
         }
     
@@ -329,21 +324,34 @@
             
                
     
-        @media screen and (max-width: $small) {
-            .t2{
+       
+            
+            @media (max-width: $small){
+
+                           .t2{
                 width: 100%;
                
-        }
-    
-            .frase_trabajos_i1{
+        } 
+            }
+
+            @media (max-width: $small){
+   .frase_trabajos_i1{
                 display: none;
             }
     
-            .frase_trabajos_i3{
+
+            }
+
+
+          @media (max-width: $small){
+
+                        .frase_trabajos_i3{
                 display: none;
             }
+          }
+
     
-    
+          @media (max-width: $small){
             .logo {
                 width: 168px;
                 color: white;
@@ -353,11 +361,21 @@
                 margin: 0;
                 
             }
+
+          }
+
+
+          @media (max-width: $small){
+
             .logo p{
                 padding-top: 10px;
                 padding-left: 15%;
             }
-            .redes {
+          }
+            
+          @media (max-width: $small){
+
+                .redes {
                 margin-right: 0px;
                 margin-top: 10px;
                 order: 0;
@@ -365,47 +383,73 @@
      
     
             }
-    
-            .inicio {
+          }
+        
+          @media (max-width: $small){
+
+                    .inicio {
                 background-color: $colortercero;
                 height: 50vh;
                 padding-left: 8%;
                 display: block;
                 padding-top: 13vh;
             }
+          }
     
+          @media (max-width: $small){
             .inicio h2{
                 width: 300px;
             }
-            .tarjeta__img {
+
+          }
+
+
+ @media (max-width: $small){
+
+    .tarjeta__img {
                 width: 240px;
             }
+ }
+            
     
-    
-            #carouselExampleSlidesOnly{
+ @media  (max-width: $small){
+   #carouselExampleSlidesOnly{
                 top: 8vh;
             }
     
-            .frase_trabajos_i2 h2 {
+
+ }
+ @media (max-width: $small){
+   .frase_trabajos_i2 h2 {
                 line-height: 1;
                 font-size: 20px;
             }
+
+ }
+         
+ @media (max-width: $small){
+
         .trabajos{
         padding-bottom: 105px;
         }
+ }
+    
             
-        }
+        
     
     
     
     
-      
-    
-    footer h5 {
+ @media (max-width: $small){
+  footer h5 {
         color: rgb(255, 255, 255);
         font-size: 12px;
     }
     
+
+ }
+ @media (max-width: $small){
+
     .t2_2 {
         z-index: 1;
         display: grid;
@@ -422,7 +466,10 @@
         align-content: space-between;
     }
     
-    .trabajos_flecha_2 {
+ }
+  
+ @media  (max-width: $small){
+ .trabajos_flecha_2 {
         width: 56vw;
         line-height: 46px;
         height: 146px;
@@ -437,22 +484,31 @@
         padding-right: 20px;
     }
     
-    
+ }
+   
+ @media (max-width: $small){
     .trabajos_flecha {
         width: 51vw;
     padding-right: 38px;
     }
+
+ }
     
-    
-    
-    .frase_trabajos {
+ @media (max-width: $small){
+
+        .frase_trabajos {
         width: 48vw;
         padding-left: 30px;
         line-height: 20px;
         justify-self: center;
         height: 49px;}
+ }
     
     
+    
+
+    
+ @media (max-width: $small){
     .cards {
         display: grid;
         grid-gap: 0px;
@@ -461,28 +517,33 @@
         justify-items: center
     }
     
-    .tarjeta{
+
+ }
+ @media (max-width: $small){
+
+ .tarjeta{
         width: 90%;
     }
+
+ }
+   
     
     
-    
-    .nosotros_img img {
+ @media (max-width: $small){
+   .nosotros_img img {
         width: 345px;
         padding-right: 28px;
     }
-    
-    .t2_3 {
+
+ }
+ 
+ @media (max-width: $small){
+   .t2_3 {
         grid-template-columns: repeat(1, 1fr);
     }
-    .nota_premios_2 {
-    
-        width: 370px;
-    }
-    
-    .tarjeta__titulo {
-        margin-left: 10px;
-    }
-    
-    }
-    
+
+ }
+
+
+  
+   

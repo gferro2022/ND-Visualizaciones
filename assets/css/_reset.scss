@@ -14,27 +14,27 @@ a{
     text-decoration: unset;
     color:black;
     &:hover{
-        color:#5DC791;
+        color:$colortercero;
 
     }
     &active{
         color:white;
     }
     &:visited{
-        color:#5DC791;
+        color:$colortercero;
     }
 }
 
 
 button.btn{
     &:active {
-        background-color: #5DC791;
+        background-color: $colortercero;
         color: black;
     
     }
     
     &:link {
-        background-color: #5DC791;
+        background-color: $colortercero;
         color: black;
     }
 
