@@ -1,5 +1,5 @@
 .navbar-dark {
-    --bs-navbar-color: black;
+    --bs-navbar-color: $colorPrimario;
 }
 
 .navbar-brand{
@@ -17,7 +17,7 @@
 }
 .redes{
     margin-right: 20px;
-    border-top: 1px solid #ffffff4d;
+    border-top: 1px solid $colorquinto;
     margin-top: 20px;
     a{
         img {

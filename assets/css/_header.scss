@@ -15,10 +15,86 @@ header .ind{
     align-items: center;
     position: relative;
 
-& h1 {
+    & h1 {
     color: white;
     text-align: center;
+            }
+        }
+
+
+header {
+    &.t2{
+        z-index: 1;
+        display: grid;
+            grid-gap: 0px;
+            margin: 3rem auto;
+            max-width: 100%;
+            grid-template-columns: repeat(4, 1fr);
+           height: auto;
+           padding-top: 50px;
+           padding-bottom: 0px;
+          margin-bottom: 0px;
+          @media (max-width: 400px) {
+            .t2{
+                width: 100%;
+               
+                }}
+          .trabajos_flecha{
+            width: 25vw;
+            line-height: 50px;
+            height: 200px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-end;
+            padding-right: 20px;
+            border-right: $colorcuarto 1px solid;
+            & img{
+                width: 50px;
+            
+            }
+            }
+            .frase_trabajos_i1{
+                line-height: 20px;
+                justify-self: center;
+                align-self: center;
+                & h2{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+                @media (max-width: 400px) {
+
+                    .frase_trabajos_i1{
+                        display: none;
+                    }}
+            }
+            .frase_trabajos_i2{
+                line-height: 20px;
+                justify-self: center;
+                align-self: center;
+                & h2{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 1;
+                }
+            
+            }
+            .frase_trabajos_i3{
+            @media (max-width: 400px) {
+                .frase_trabajos_i3{
+                    display: none;
+                }}
+            }
+    }
 }
-}
+
+    
+
 
 

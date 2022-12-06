@@ -9,14 +9,14 @@
 
     
     .inicio{
-        background-color:#F1EFED ;
+        background-color:$colortercero ;
         height: 30vh;
         padding-left: 20%;
         position: absolute;
         padding-top: 30px;
         bottom: 14vh;
         & h6{
-            color:#5DC791;
+            color:$colorSecundario;
             font-family: 'Roboto', sans-serif;
             font-weight: 900;
             font-size: clamp(1rem, 1vw, 2rem);
@@ -49,109 +49,109 @@
             width: 100%;
             height: auto;
             padding-bottom: 20px;
-        }
-    }
-    
-
-
-    
-    
-    .cards{
-        display: grid;
-        grid-gap: 0px;
-        margin: 3rem auto;
-        max-width: 100%;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    .tarjeta{
-        display: flex;
-        flex-direction: column;
-        align-items: center ;
-        border: 0.6px solid rgb(0, 0, 0);
-        padding: 44px;
-    
-    }
-    
-    .tarjeta__img{
-        width: 150px;
-        
-    }
-    
-    .contenedor{
-    
-        width: 150px;
-        position: relative;
-        align-items: center;
-        display: flex;
-        justify-content: space-evenly;
-        &:hover {
-            transform:scale(2.1);
-            padding: 0px;
-            filter: hue-rotate(90deg);
-            
-        
-        }
-    
-    }
-    
-
-    
-    
-    .tarjeta__titulo{
-        font-size: 14px;
-        margin: 5px 0px;
-        text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
-        line-height: 12px;
-    }
-    
-    
-    .tarjeta__date{
-    padding-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 12px;
-    color: #5DC791;
-    line-height: 12px;
-    }
-    
-    .tarjeta__descrip{
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 16px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        line-height: 20px;
-        & span{
-            font-weight: 900;
-            }
-        }
-         
-    
-    .trabajos{
-            height: auto;
             padding-left: 0%;
             padding-right: 0%;
             display: flex;
-            padding-top: 0px;
+             padding-top: 0px;
+            
+            .cards{
+                display: grid;
+                grid-gap: 0px;
+                margin: 3rem auto;
+                max-width: 100%;
+                grid-template-columns: repeat(4, 1fr);
+                border-collapse: collapse;
+                border: 0.6px solid black;
+                border-spacing: 0px;
+                .tarjeta{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center ;
+                    border: 0.6px solid $colorPrimario;
+                    padding: 44px;
+
+                    .tarjeta__titulo{
+                     font-size: 14px;
+                     margin: 5px 0px;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 900;
+                     line-height: 12px;
+                     }
+    
+    
+                     .tarjeta__date{
+                        padding-bottom: 20px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 900;
+                        font-size: 12px;
+                        color: #5DC791;
+                        line-height: 12px;
+                    }
+    
+                    .contenedor{
+    
+                        width: 150px;
+                        position: relative;
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-evenly;
+                        &:hover {
+                            transform:scale(2.1);
+                            padding: 0px;
+                            filter: hue-rotate(90deg);
+                            
+                        
+                        }
+                           
+                     .tarjeta__img{
+                        width: 150px;
+        
+                                    }
+                         }
+                          
+                       .tarjeta__descrip{
+                          text-align: center;
+                          padding-top: 20px;
+                         padding-bottom: 20px;
+                         font-size: 16px;
+                         font-family: 'Roboto', sans-serif;
+                          font-weight: 400;
+                         line-height: 20px;
+                         & span{
+                         font-weight: 900;
+                          }
+                         }
+                
+                }
+
+
+            }
+
+       
         }
-    
-    
-    .t2{
-        z-index: 1;
-        display: grid;
-            grid-gap: 0px;
-            margin: 3rem auto;
-            max-width: 100%;
-            grid-template-columns: repeat(4, 1fr);
-           height: auto;
-           padding-top: 50px;
-           padding-bottom: 0px;
-          margin-bottom: 0px;
     }
+    
+
+
+    
+    
+
+    
+    
+ 
+    
+
+    
+
+    
+   
+         
+    
+ 
+    
+    
+    
     
     .t2_2{
         z-index: 1;
@@ -182,25 +182,7 @@
     }
     
     
-    .trabajos_flecha{
-        width: 25vw;
-        line-height: 50px;
-        height: 200px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: flex-end;
-        padding-right: 20px;
-        border-right: #161717 1px solid;
-        & img{
-            width: 50px;
-        
-        }
-    }
+
     
     .trabajos_flecha_2{
         width: 25vw;
@@ -234,32 +216,10 @@
     
     }
     
-    .frase_trabajos_i1{
-        line-height: 20px;
-        justify-self: center;
-        align-self: center;
-    }
-    .frase_trabajos_i2{
-        line-height: 20px;
-        justify-self: center;
-        align-self: center;
-    
-    }
-    
 
     
-    .frase_trabajo_i1 h2{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-    }
-    
-    .frase_trabajo_i2 h2{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 1;
-    }
+
+
        
     
     .frase_trabajos2{
@@ -347,7 +307,7 @@
         height: 100px;
         width: 100%;
         padding-top: 10px;
-        border-top: #161717 solid 1px;
+        border-top: $colorcuarto solid 1px;
         align-items: center;
         
         }
@@ -373,7 +333,7 @@
     
         input#name {
             width: 500px;
-            background-color: #F1EFED;
+            background-color: $colortercero;
             border: none;
             height: 50px;
             padding-left: 20px;
@@ -385,11 +345,11 @@
     
         input#mail{
             width: 500px;
-            background-color: #F1EFED;
+            background-color: $colortercero;
             border: none;
             height: 50px;
             padding-left: 20px;
-            color: rgb(112, 112, 112);
+            color: $colorquinto;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 200;
@@ -398,7 +358,7 @@
     
         textarea#msg{
             width: 500px;
-            color:rgb(112, 112, 112);
+            color:$colorquinto;
             padding-left: 20px;
             padding-top: 10px;
     
@@ -411,7 +371,7 @@
         }
     
      
-        @media (max-width: 1000px) {
+        @media screen and (max-width: $big) {
             .cards{
                 grid-template-columns: repeat(3, 1fr);
             }
@@ -435,7 +395,7 @@
             }
     
              
-        @media (max-width: 768px) {
+        @media (max-width: $medium) {
     
             .t2{
                     grid-template-columns: repeat(3, 1fr);
@@ -445,7 +405,7 @@
             }
             }
     
-            @media (max-width: 576px) {
+            @media (max-width: $medium2) {
     
     
                 .cards{
@@ -470,7 +430,7 @@
             
                
     
-        @media (max-width: 400px) {
+        @media screen and (max-width: $small) {
             .t2{
                 width: 100%;
                
@@ -508,7 +468,7 @@
             }
     
             .inicio {
-                background-color: #F1EFED;
+                background-color: $colortercero;
                 height: 50vh;
                 padding-left: 8%;
                 display: block;
