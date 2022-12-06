@@ -36,9 +36,7 @@ header {
           margin-bottom: 0px;
           @media (max-width: 400px) {
             .t2{
-                width: 100%;
-               
-                }}
+                width: 100%;}}
           .trabajos_flecha{
             width: 25vw;
             line-height: 50px;
@@ -74,7 +72,6 @@ header {
                     }}
             }
             .frase_trabajos_i2{
-                line-height: 20px;
                 justify-self: center;
                 align-self: center;
                 & h2{
@@ -95,6 +92,16 @@ header {
 }
 
     
+.frase_trabajos{
+    line-height: 20px;
+    justify-self: center;
+    align-self: center;
+    & h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+    }
 
+}
 
 
