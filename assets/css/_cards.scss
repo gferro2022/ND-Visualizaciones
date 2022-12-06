@@ -90,22 +90,24 @@ main{
                     align-items: center;
                     display: flex;
                     justify-content: space-evenly;
-                    &:hover {
-                        transform:scale(2.1);
-                        padding: 0px;
-                        filter: hue-rotate(90deg);
-                             }
-                       
-                     .tarjeta_img{
-                         width: 150px;
+                    img{
+                        .tarjeta_img{
+                            width: 150px;
+                            @media (max-width: $small){
+                                width: 240px;
+                    
+                              }
                           }
-                    @media (max-width: $small){
-
-                           width: 240px;
-                                  
+                          &:hover {
+                            transform:scale(2.1);
+                            padding: 0px;
+                            filter: hue-rotate(90deg);
+                                 }
+                        }
                          }
-                     }
-                      
+
+                    
+                       
                    .tarjeta_descrip{
                       text-align: center;
                       padding-top: 20px;
