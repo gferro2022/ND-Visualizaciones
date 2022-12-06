@@ -19,4 +19,11 @@ footer h5 {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+        
+ @media (max-width: $small){
+    
+          color: rgb(255, 255, 255);
+          font-size: 12px;
+      
+   }
 }

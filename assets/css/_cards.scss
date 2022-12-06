@@ -9,6 +9,17 @@ main{
         padding-right: 0%;
         display: flex;
          padding-top: 0px;
+                  
+         @media (max-width: $small){
+
+    
+             padding-bottom: 105px;
+  
+        }
+
+        
+    
+
         
         .cards{
             display: grid;
@@ -19,12 +30,35 @@ main{
             border-collapse: collapse;
             border: 0.6px solid black;
             border-spacing: 0px;
+                
+            @media (max-width: $small){
+            display: grid;
+            grid-gap: 0px;
+             margin: 20px auto;
+             grid-template-columns: repeat(1, 1fr);
+             justify-items: center;
+            }
+            @media (max-width: $big) {
+
+            grid-template-columns: repeat(3, 1fr);
+            
+             }
+             @media (max-width: $medium2) {
+        
+            grid-template-columns: repeat(2, 1fr);
+            }
+  
+
             .tarjeta{
                 display: flex;
                 flex-direction: column;
                 align-items: center ;
                 border: 0.6px solid $colorPrimario;
                 padding: 44px;
+                @media (max-width: $small){
+                     width: 90%;
+                   
+                }
 
                 .tarjeta_titulo{
                  font-size: 14px;
@@ -60,14 +94,16 @@ main{
                         transform:scale(2.1);
                         padding: 0px;
                         filter: hue-rotate(90deg);
-                        
-                    
-                    }
+                             }
                        
-                 .tarjeta_img{
-                    width: 150px;
-    
-                                }
+                     .tarjeta_img{
+                         width: 150px;
+                          }
+                    @media (max-width: $small){
+
+                           width: 240px;
+                                  
+                         }
                      }
                       
                    .tarjeta_descrip{
