@@ -552,7 +552,7 @@ li.button {
   .intro h2 {
     width: 300px;
   }
-  .tarjeta__img {
+  .card__img {
     width: 240px;
   }
   #carouselExampleSlidesOnly {
@@ -651,7 +651,7 @@ li.button {
   }
 }
 @media (max-width: 576px) {
-  .tarjeta__titulo {
+  .card__titulo {
     margin-left: 10px;
   }
 }
