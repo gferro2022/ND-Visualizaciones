@@ -4,7 +4,6 @@
     @import "header.scss";
     @import "variables.scss";
     @import "footer.scss";
-    @import "cards.scss";
 
 
 
@@ -226,15 +225,18 @@ main{
                     justify-content: space-evenly;
                     
                     .card_foto{
-                            width: 150px;
-                            @media (max-width: $small){
-                            width: 240px;
-                            }
-                            }
-                            &:hover {
-                            transform:scale(2.1);
-                            padding: 0px;
-                            filter: hue-rotate(90deg);
+                    width: 150px;
+                     @media (max-width: $small){
+                     width: 240px;
+                     & img{
+                        width: 150px;
+                     }
+                    }
+                     &:hover {
+                     transform:scale(2.1);
+                     padding: 0px;
+                     filter: hue-rotate(90deg);
+                     }
                             }
                             } 
                        
