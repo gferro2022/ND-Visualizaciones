@@ -48,25 +48,7 @@
         }
     }
 
-    
-    .t2{
-        @media (max-width: $big) {
-         grid-template-columns: repeat(3, 1fr);
-         }
-         @media (max-width: $medium) {      
-         grid-template-columns: repeat(3, 1fr);
-        width: 768px;
-         max-width: 727px;     
-        }
-          @media (max-width: $medium2) {               
-         grid-template-columns: repeat(2, 1fr);
-           width: 100%;
-         }
-          @media (max-width: $small){
-            width: 100%;
-         }
-    }
-
+   
     .t2_2{
         z-index: 1;
         display: grid;
