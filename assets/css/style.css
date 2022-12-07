@@ -18,7 +18,7 @@ a {
 a:hover {
   color: #5DC791;
 }
-aactive {
+a:active {
   color: white;
 }
 a:visited {
@@ -115,7 +115,7 @@ footer h5 {
   font-weight: 300;
 }
 
-.inicio {
+.intro {
   background-color: #F1EFED;
   height: 30vh;
   padding-left: 20%;
@@ -123,21 +123,21 @@ footer h5 {
   padding-top: 30px;
   bottom: 14vh;
 }
-.inicio h6 {
+.intro h6 {
   color: #5DC791;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: clamp(1rem, 1vw, 2rem);
   line-height: 1;
 }
-.inicio h1 {
+.intro h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
   font-size: clamp(2rem, 3.5vw, 5rem);
 }
-.inicio h2 {
+.intro h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: clamp(1.5rem, 3.5vw, 5rem);
@@ -542,14 +542,14 @@ li.button {
     order: 0;
     height: 30px;
   }
-  .inicio {
+  .intro {
     background-color: #F1EFED;
     height: 50vh;
     padding-left: 8%;
     display: block;
     padding-top: 13vh;
   }
-  .inicio h2 {
+  .intro h2 {
     width: 300px;
   }
   .tarjeta__img {
