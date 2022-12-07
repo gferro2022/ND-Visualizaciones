@@ -26,22 +26,3 @@ a{
 }
 
 
-button.btn{
-    &:active {
-        background-color: $colortercero;
-        color: black;
-    
-    }
-    
-    &:link {
-        background-color: $colortercero;
-        color: black;
-    }
-
-}
-.btn{
-    background-color:black;
-    padding: 8px 12px;
-    color: white;
-    border: 1px solid black; 
-}

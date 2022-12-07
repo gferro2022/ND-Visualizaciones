@@ -8,19 +8,11 @@ main{
         padding-left: 0%;
         padding-right: 0%;
         display: flex;
-         padding-top: 0px;
-                  
-         @media (max-width: $small){
-
-    
-             padding-bottom: 105px;
-  
+        padding-top: 0px;   
+        @media (max-width: $small){
+        padding-bottom: 105px;
         }
 
-        
-    
-
-        
         .cards{
             display: grid;
             grid-gap: 0px;
@@ -29,25 +21,21 @@ main{
             grid-template-columns: repeat(4, 1fr);
             border-collapse: collapse;
             border: 0.6px solid black;
-            border-spacing: 0px;
-                
+            border-spacing: 0px;    
             @media (max-width: $small){
             display: grid;
             grid-gap: 0px;
-             margin: 20px auto;
-             grid-template-columns: repeat(1, 1fr);
-             justify-items: center;
+            margin: 20px auto;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
             }
+            @media (max-width: $medium2) {
+                grid-template-columns: repeat(2, 1fr);
+                }    
             @media (max-width: $big) {
-
             grid-template-columns: repeat(3, 1fr);
-            
-             }
-             @media (max-width: $medium2) {
-        
-            grid-template-columns: repeat(2, 1fr);
             }
-  
+
 
             .tarjeta{
                 display: flex;
@@ -57,10 +45,9 @@ main{
                 padding: 44px;
                 @media (max-width: $small){
                      width: 90%;
-                   
                 }
 
-                .tarjeta_titulo{
+                .card_titulo{
                  font-size: 14px;
                  margin: 5px 0px;
                 text-transform: uppercase;
@@ -69,12 +56,10 @@ main{
                  line-height: 12px;
                  @media (max-width: $small){
                 margin-left: 10px;
-                  
-               }
-                 }
+                }
+                }
 
-
-                 .tarjeta_date{
+                 .card_date{
                     padding-bottom: 20px;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 900;
@@ -84,31 +69,26 @@ main{
                 }
 
                 .contenedor{
-
                     width: 150px;
                     position: relative;
                     align-items: center;
                     display: flex;
                     justify-content: space-evenly;
-                    img{
-                        .tarjeta_img{
+                    
+                    .card_img{
                             width: 150px;
                             @media (max-width: $small){
-                                width: 240px;
-                    
-                              }
-                          }
-                          &:hover {
+                            width: 240px;
+                            }
+                            }
+                            &:hover {
                             transform:scale(2.1);
                             padding: 0px;
                             filter: hue-rotate(90deg);
-                                 }
-                        }
-                         }
-
-                    
+                            }
+                            } 
                        
-                   .tarjeta_descrip{
+                .card_descrip{
                       text-align: center;
                       padding-top: 20px;
                      padding-bottom: 20px;
@@ -116,16 +96,32 @@ main{
                      font-family: 'Roboto', sans-serif;
                       font-weight: 400;
                      line-height: 20px;
-                     & span{
+                     .card_descrip span{
                      font-weight: 900;
                       }
                      }
-            
+                     button.btn{
+                        &:active {
+                            background-color: $colortercero;
+                            color: black;
+                        
+                        }
+                        
+                        &:link {
+                            background-color: $colortercero;
+                            color: black;
+                        }
+                    
+                    }
+                    .btn{
+                        background-color:black;
+                        padding: 8px 12px;
+                        color: white;
+                        border: 1px solid black; 
+                    }
+
+
             }
-
-
         }
-
-   
     }
 }

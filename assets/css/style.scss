@@ -6,46 +6,29 @@
     @import "footer.scss";
     @import "cards.scss";
 
-/*
-    $breakpoints: (
-        sm : 400px,
-            lg : 768px,
-            md : 576px,
-           bg : 1024px,
-           xl : 1280px,
-           );
-        
-           @mixin media-up ($breakpoint){
-               @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
-                @content;
-               }
-           } 
-           
-    */
 
-    .inicio{
+
+    .intro{
         background-color:$colortercero ;
         height: 30vh;
         padding-left: 20%;
         position: absolute;
         padding-top: 30px;
-        bottom: 14vh;
-                
+        bottom: 14vh;  
         @media (max-width: $small){
         background-color: $colortercero;
         height: 50vh;
         padding-left: 8%;
         display: block;
         padding-top: 13vh;
-   
         }
+
         h6{
             color:$colorSecundario;
             font-family: 'Roboto', sans-serif;
             font-weight: 900;
             font-size: clamp(1rem, 1vw, 2rem);
-            line-height: 1;
-            
+            line-height: 1;  
         }
         h1{
             font-family: 'Roboto', sans-serif;
@@ -61,26 +44,20 @@
             text-transform: uppercase;
             line-height: 1;
             @media (max-width: $small){
-            
-             width: 300px;
-            
-              }
-            
-            
+            width: 300px;
+            }
         }
     }
 
     .t2{
-
         @media (max-width: $big) {
          grid-template-columns: repeat(3, 1fr);
          }
-           
          @media (max-width: $medium) {      
          grid-template-columns: repeat(3, 1fr);
-          width: 768px;
+        width: 768px;
          max-width: 727px;     
-          }
+        }
           @media (max-width: $medium2) {               
          grid-template-columns: repeat(2, 1fr);
            width: 100%;
@@ -115,9 +92,7 @@
                 justify-content: center;
                 justify-items: start;
                 align-content: space-between;
-            
          }
-    
     }
     
     .t2_3{
@@ -133,13 +108,9 @@
            align-items: flex-start;
            @media (max-width: $small){
                  grid-template-columns: repeat(1, 1fr);
-             
           }
-    
     }
     
-    
-
     
     .trabajos_flecha_2{
         width: 25vw;
@@ -155,7 +126,6 @@
         align-items: flex-end;
         padding-right: 20px;
         @media  (max-width: $small){
-         
                    width: 56vw;
                    line-height: 46px;
                    height: 146px;
@@ -168,12 +138,9 @@
                    justify-content: top;
                    align-items: flex-end;
                    padding-right: 20px;
-             
-               
             }
         & img{
             width: 50px;
-        
         }
     }
     
@@ -208,14 +175,12 @@
         }
         
         .volanta_premios{
-        
             line-height: 20px;
             justify-self: start;
             width: 40px;
         }
         
         .texto_premios{
-        
             line-height: 20px;
             width: 700px;
             justify-self: start;
@@ -245,7 +210,6 @@
         justify-items:start;
         align-items:center;
         justify-content:start;
-      
     }
     
   
@@ -276,15 +240,12 @@
         border-top: $colorcuarto solid 1px;
         align-items: center;
         @media (max-width: $small){
-         width: 370px;
-           
+         width: 370px;  
         }
-          
         }
     
 
         .volanta_premios2{
-    
             line-height: 20px;
             justify-self: start;
             width: 200px;
