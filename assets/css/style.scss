@@ -8,14 +8,14 @@
 
 
     .intro{
-        background-color:$colortercero ;
+        background-color:$colorTercero ;
         height: 30vh;
         padding-left: 20%;
         position: absolute;
         padding-top: 30px;
         bottom: 14vh;  
         @media (max-width: $small){
-        background-color: $colortercero;
+        background-color: $colorTercero;
         height: 50vh;
         padding-left: 8%;
         display: block;
@@ -91,7 +91,7 @@
                 justify-content: center;
                 align-items: flex-end;
                 padding-right: 20px;
-                border-right: $colorcuarto 1px solid;
+                border-right: $colorCuarto 1px solid;
                     
                  @media (max-width: $big) {
                
@@ -372,13 +372,13 @@ main{
                      }
                      button.btn{
                         &:active {
-                            background-color: $colortercero;
+                            background-color: $colorTercero;
                             color: black;
                         
                         }
                         
                         &:link {
-                            background-color: $colortercero;
+                            background-color: $colorTercero;
                             color: black;
                         }
                     
@@ -506,7 +506,7 @@ main{
         height: 100px;
         width: 100%;
         padding-top: 10px;
-        border-top: $colorcuarto solid 1px;
+        border-top: $colorCuarto solid 1px;
         align-items: center;
         @media (max-width: $small){
          width: 370px;  
@@ -530,7 +530,7 @@ main{
     
         input#name {
             width: 500px;
-            background-color: $colortercero;
+            background-color: $colorTercero;
             border: none;
             height: 50px;
             padding-left: 20px;
@@ -542,11 +542,11 @@ main{
     
         input#mail{
             width: 500px;
-            background-color: $colortercero;
+            background-color: $colorTercero;
             border: none;
             height: 50px;
             padding-left: 20px;
-            color: $colorquinto;
+            color: $colorQuinto;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 200;
@@ -555,7 +555,7 @@ main{
     
         textarea#msg{
             width: 500px;
-            color:$colorquinto;
+            color:$colorQuinto;
             padding-left: 20px;
             padding-top: 10px;
     
