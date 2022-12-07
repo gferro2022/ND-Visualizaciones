@@ -171,7 +171,7 @@ main .trabajos {
   padding: 44px;
 }
 
-.tarjeta__img {
+.card__img {
   width: 150px;
 }
 
@@ -188,7 +188,7 @@ main .trabajos {
   filter: hue-rotate(90deg);
 }
 
-.tarjeta__titulo {
+.card__titulo {
   font-size: 14px;
   margin: 5px 0px;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ main .trabajos {
   line-height: 12px;
 }
 
-.tarjeta__date {
+.card__date {
   padding-bottom: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -206,7 +206,7 @@ main .trabajos {
   line-height: 12px;
 }
 
-.tarjeta__descrip {
+.card__descrip {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -215,7 +215,7 @@ main .trabajos {
   font-weight: 400;
   line-height: 20px;
 }
-.tarjeta__descrip span {
+.card__descrip span {
   font-weight: 900;
 }
 
