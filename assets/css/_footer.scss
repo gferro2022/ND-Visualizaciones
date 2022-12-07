@@ -11,8 +11,8 @@ footer{
     position: fixed;
     left: 0px;
     width: 100%;
-    .pie{
-        position: unset;
+    &.pie{
+    position: unset;
     }
     h5 {
         color: rgb(255, 255, 255);
