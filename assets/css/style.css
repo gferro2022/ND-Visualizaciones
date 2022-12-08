@@ -207,7 +207,7 @@ main .trabajos {
 }
 
 .card_descrip {
-  text-align: center;
+  text-align: left;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 16px;
