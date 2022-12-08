@@ -282,7 +282,7 @@ main{
             width: 20%;
             grid-template-columns: repeat(4, 1fr);
             border-collapse: collapse;
-            border: 0.6px solid black;
+            border: 0.6px solid $colorPrimario;
             border-spacing: 0px;    
             @media (max-width: $small){
             display: grid;
@@ -363,7 +363,9 @@ main{
                        
           
 
-                .card_descrip{
+                p{
+
+                      &.card_descrip{
                       text-align: center;
                       padding-top: 20px;
                      padding-bottom: 20px;
@@ -371,28 +373,30 @@ main{
                      font-family: 'Roboto', sans-serif;
                       font-weight: 400;
                      line-height: 20px;
-                     & span{
+                     span {
                      font-weight: 900;
                       }
                      }
+                }
+              
                      button.btn{
                         &:active {
                             background-color: $colorTercero;
-                            color: black;
+                            color:$colorPrimario;
                         
                         }
                         
                         &:link {
                             background-color: $colorTercero;
-                            color: black;
+                            color:$colorPrimario;
                         }
                     
                     }
                     .btn{
-                        background-color:black;
+                        background-color:$colorPrimario;
                         padding: 8px 12px;
                         color: white;
-                        border: 1px solid black; 
+                        border: 1px solid $colorPrimario; 
                     }
 
 
@@ -539,7 +543,7 @@ main{
             border: none;
             height: 50px;
             padding-left: 20px;
-            color: rgb(112, 112, 112);
+            color: $colorQuinto;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 200;

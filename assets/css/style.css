@@ -171,7 +171,7 @@ main .trabajos {
   padding: 44px;
 }
 
-.card__img {
+.card_img {
   width: 150px;
 }
 
@@ -188,7 +188,7 @@ main .trabajos {
   filter: hue-rotate(90deg);
 }
 
-.card__titulo {
+.card_titulo {
   font-size: 14px;
   margin: 5px 0px;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ main .trabajos {
   line-height: 12px;
 }
 
-.card__date {
+.card_date {
   padding-bottom: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -206,7 +206,7 @@ main .trabajos {
   line-height: 12px;
 }
 
-.card__descrip {
+.card_descrip {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -215,7 +215,7 @@ main .trabajos {
   font-weight: 400;
   line-height: 20px;
 }
-.card__descrip span {
+.card_descrip span {
   font-weight: 900;
 }
 
@@ -552,7 +552,7 @@ li.button {
   .intro h2 {
     width: 300px;
   }
-  .card__img {
+  .card_img {
     width: 240px;
   }
   #carouselExampleSlidesOnly {
@@ -651,7 +651,7 @@ li.button {
   }
 }
 @media (max-width: 576px) {
-  .card__titulo {
+  .card_titulo {
     margin-left: 10px;
   }
 }
