@@ -179,83 +179,6 @@
                 }
         }
     
-    .t2_2{
-        z-index: 1;
-        display: grid;
-            grid-gap: 0px;
-            margin: 3rem auto;
-            max-width: 100%;
-            grid-template-columns: repeat(2, 1fr);
-           height: auto;
-           padding-top: 50px;
-           padding-bottom: 20px;
-           align-items: flex-start;
-           @media (max-width: $small){
-                z-index: 1;
-                display: grid;
-                grid-gap: 0px;
-                margin: 3rem auto;
-                max-width: 350px;
-                grid-template-columns: repeat(1, 1fr);
-                height: auto;
-                padding-top: 50px;
-                padding-bottom: 20px;
-                align-items: center;
-                justify-content: center;
-                justify-items: start;
-                align-content: space-between;
-         }
-    }
-    
-    .t2_3{
-        z-index: 1;
-        display: grid;
-            grid-gap: 0px;
-            margin: 3rem auto;
-            max-width: 100%;
-            grid-template-columns: repeat(2, 1fr);
-           height: auto;
-           padding-top: 50px;
-           padding-bottom: 20px;
-           align-items: flex-start;
-           @media (max-width: $small){
-                 grid-template-columns: repeat(1, 1fr);
-          }
-    }
-    
-    
-    .trabajos_flecha_2{
-        width: 25vw;
-        line-height: 50px;
-        height: 200px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: top;
-        align-items: flex-end;
-        padding-right: 20px;
-        @media  (max-width: $small){
-                   width: 56vw;
-                   line-height: 46px;
-                   height: 146px;
-                   font-family: 'Roboto', sans-serif;
-                   font-weight: 900;
-                   font-size: 20px;
-                   display: flex;
-                   flex-direction: column;
-                   flex-wrap: nowrap;
-                   justify-content: top;
-                   align-items: flex-end;
-                   padding-right: 20px;
-            }
-        & img{
-            width: 50px;
-        }
-    }
-    
 
 /*/////////////////////CARDS/////////////////////*/
 
@@ -416,6 +339,91 @@ main{
                 }
 
 /*/////////////////////CARDS/////////////////////*/
+
+
+
+
+
+
+
+
+    .t2_2{
+        z-index: 1;
+        display: grid;
+            grid-gap: 0px;
+            margin: 3rem auto;
+            max-width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+           height: auto;
+           padding-top: 50px;
+           padding-bottom: 20px;
+           align-items: flex-start;
+           @media (max-width: $small){
+                z-index: 1;
+                display: grid;
+                grid-gap: 0px;
+                margin: 3rem auto;
+                max-width: 350px;
+                grid-template-columns: repeat(1, 1fr);
+                height: auto;
+                padding-top: 50px;
+                padding-bottom: 20px;
+                align-items: center;
+                justify-content: center;
+                justify-items: start;
+                align-content: space-between;
+         }
+    }
+    
+    .t2_3{
+        z-index: 1;
+        display: grid;
+            grid-gap: 0px;
+            margin: 3rem auto;
+            max-width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+           height: auto;
+           padding-top: 50px;
+           padding-bottom: 20px;
+           align-items: flex-start;
+           @media (max-width: $small){
+                 grid-template-columns: repeat(1, 1fr);
+          }
+    }
+    
+    
+    .trabajos_flecha_2{
+        width: 25vw;
+        line-height: 50px;
+        height: 200px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: top;
+        align-items: flex-end;
+        padding-right: 20px;
+        @media  (max-width: $small){
+                   width: 56vw;
+                   line-height: 46px;
+                   height: 146px;
+                   font-family: 'Roboto', sans-serif;
+                   font-weight: 900;
+                   font-size: 20px;
+                   display: flex;
+                   flex-direction: column;
+                   flex-wrap: nowrap;
+                   justify-content: top;
+                   align-items: flex-end;
+                   padding-right: 20px;
+            }
+        & img{
+            width: 50px;
+        }
+    }
+    
 
 
 
