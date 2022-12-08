@@ -261,7 +261,6 @@
 
 main{
     width: 100%;
-    height: 20vh;
     & .trabajos{
         width: 100%;
         max-width: 1260px;
@@ -306,12 +305,13 @@ main{
                 align-items: center ;
                 border: 0.6px solid $colorPrimario;
                 padding: 44px;
-                min-height: 270px;
+                min-height: 200px;
                 @media (max-width: $small){
                      width: 90%;
                 }
 
-                .card_titulo{
+                h5 {
+                &.card_titulo {
                  font-size: 14px;
                  margin: 5px 0px;
                 text-transform: uppercase;
@@ -322,8 +322,10 @@ main{
                 margin-left: 10px;
                 }
                 }
+                }
 
-                 .card_date{
+                p {
+                    &.card_date{
                     padding-bottom: 20px;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 900;
@@ -331,6 +333,8 @@ main{
                     color: #5DC791;
                     line-height: 12px;
                 }
+                }
+
 
                 .contenedor{
                     
@@ -339,7 +343,9 @@ main{
                     display: flex;
                     justify-content: space-evenly;
                     
-                    img.card_foto {
+                    img {
+
+                    &.card_foto {
                     width: 150px;
                      @media (max-width: $small){
                      width: 240px;
@@ -350,12 +356,12 @@ main{
                      padding: 0px;
                      filter: hue-rotate(90deg);
                      }*/
-                            }
-                            } 
+                     }
+                     }
+           
+                     } 
                        
-            img.card_foto{
-                    width: 150px;
-                    }
+          
 
                 .card_descrip{
                       text-align: center;
