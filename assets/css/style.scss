@@ -269,17 +269,16 @@ main{
                     img {
 
                     &.card_foto {
-                    width: 150px;
+                    width: 150px !important;
                      @media (max-width: $small){
                      width: 240px;
                     }
-                    /*
-                     &:hover {
-                     transform:scale(2.1);
+                     }
+                     
+                     &.card_foto :hover {
+                    transform:scale(2.1);
                      padding: 0px;
                      filter: hue-rotate(90deg);
-                     }*/
-                     }
                      }
            
                      } 
