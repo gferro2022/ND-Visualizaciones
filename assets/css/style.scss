@@ -222,14 +222,10 @@ main.trabajos{
                 h5 {
                 &.card_titulo {
                  font-size: 14px;
-                 margin: 5px 0px;
                 text-transform: uppercase;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 900;
                  line-height: 12px;
-                 @media (max-width: $small){
-                margin-left: 10px;
-                }
                 }
                 }
 
@@ -270,14 +266,17 @@ main.trabajos{
 
                       &.card_descrip{
                       text-align: left;
+                      width: 70%;
                       padding-top: 20px;
                      padding-bottom: 20px;
                      font-size: 16px;
                      font-family: 'Roboto', sans-serif;
                       font-weight: 400;
                      line-height: 20px;
+                     color: black;
                      span {
                      font-weight: 900;
+                     color: #5DC791;
                       }
                      }
                 }
@@ -324,7 +323,7 @@ main.trabajos{
         display: grid;
             grid-gap: 0px;
             margin: 3rem auto;
-            max-width: 100%;
+            max-width: 100vw;
             grid-template-columns: repeat(2, 1fr);
            height: auto;
            padding-top: 50px;
@@ -423,7 +422,7 @@ main.trabajos{
 
     .nota_premios{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 2fr 1fr;
         height: 135px;
         width: 100%;
         padding-bottom: 20px;
@@ -435,18 +434,24 @@ main.trabajos{
         .volanta_premios{
             line-height: 20px;
             justify-self: start;
-            width: 40px;
+            max-width: 100px;
         }
         
         .texto_premios{
             line-height: 20px;
-            width: 700px;
+            width: 45vw;
             justify-self: start;
+        
+            @media (max-width: $big){
+                padding-left: 80px;
+                
+            }
+
         }
         
         .flecha_premios{
-            height: 50px;
-            width: 40px;
+            max-height: 100%;
+            max-width: 100%;
             line-height: 20px;
             justify-self: start;
         
@@ -472,13 +477,12 @@ main.trabajos{
     
   
     img .btn-flecha{
-        width: 60px;
+        width: 80px;
         display: grid;
     }
     
     .nosotros_img{
-        width: 800px;
-        max-width: 100%;
+        max-width: 1000px;
         margin-right: 20px;
         img{
             @media (max-width: $small){
@@ -520,7 +524,7 @@ main.trabajos{
         } 
     
         input#name {
-            width: 500px;
+            width: 65vw;
             background-color: $colorTercero;
             border: none;
             height: 50px;
@@ -532,7 +536,7 @@ main.trabajos{
         }
     
         input#mail{
-            width: 500px;
+            width: 65vw;
             background-color: $colorTercero;
             border: none;
             height: 50px;
@@ -545,7 +549,7 @@ main.trabajos{
         }
     
         textarea#msg{
-            width: 500px;
+            width: 65vw;
             color:$colorQuinto;
             padding-left: 20px;
             padding-top: 10px;
