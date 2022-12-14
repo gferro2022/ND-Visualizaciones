@@ -47,8 +47,7 @@
         }
     }
 
-    header {
-        &.t2{
+ .t2{
             z-index: 1;
             display: grid;
                 grid-gap: 0px;
@@ -63,15 +62,15 @@
                width: 100%;}
      
                 @media (max-width: $big) {
-                 grid-template-columns: repeat(3, 1fr);
+                 grid-template-columns: repeat(4, 1fr);
                  }
                  @media (max-width: $medium) {      
-                 grid-template-columns: repeat(3, 1fr);
+                 grid-template-columns: repeat(4, 1fr);
                 width: 768px;
                  max-width: 727px;     
                 }
                   @media (max-width: $medium2) {               
-                 grid-template-columns: repeat(2, 1fr);
+                 grid-template-columns: repeat(4, 1fr);
                    width: 100%;
                  }
     
@@ -177,7 +176,7 @@
                 }
                 }
                 }
-        }
+    
     
 
 /*/////////////////////CARDS/////////////////////*/
@@ -203,7 +202,7 @@ main.trabajos{
                 grid-template-columns: repeat(2, 1fr);
                 }    
             @media (max-width: $big) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             }
 
 
