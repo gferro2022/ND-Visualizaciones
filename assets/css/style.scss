@@ -194,7 +194,6 @@ main.trabajos{
             border: 0.6px solid $colorPrimario;
             border-spacing: 0px;    
             @media (max-width: $small){
-            display: grid;
             grid-gap: 0px;
             margin: 20px auto;
             grid-template-columns: repeat(1, 1fr);
