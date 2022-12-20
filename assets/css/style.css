@@ -11,6 +11,14 @@ body {
   height: 100vh;
 }
 
+body.uno{
+  position: relative;
+  width: auto;
+  height: 100vh;
+  background-color:#F1EFED ;
+}
+
+
 a {
   text-decoration: unset;
   color: black;
@@ -214,14 +222,15 @@ img.card_foto:hover {
 }
 
 .card_descrip {
-  text-align: left;
+  text-align: center;
   padding-bottom: 20px;
-  width: 70%;
+  width: 100%;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
-  color:black
+  color: black;
+  margin-top: 25px;
 }
 
 .card_descrip span {
@@ -274,6 +283,7 @@ img.card_foto:hover {
   padding-top: 50px;
   padding-bottom: 20px;
   align-items: flex-start;
+  margin-left: 30px;
 }
 
 .trabajos_flecha {

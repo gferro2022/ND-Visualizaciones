@@ -9,22 +9,17 @@
     box-sizing: inherit;
 }
 
-body{
-    position: relative;
-    width: auto;
-    height: 100vh;
-    display: block;
-}
 
 body{
     position: relative;
     width: auto;
     height: 100vh;
     display: block;
-    &uno{
+    &.uno{
         background-color: $colorTercero;
     }
 }
+
 a{
     text-decoration: unset;
     color:$colorPrimario;
@@ -32,7 +27,7 @@ a{
         color:$colortercero;
 
     }
-    &active{
+    &:active{
         color:white;
     }
     &:visited{
