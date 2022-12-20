@@ -16,6 +16,15 @@ body{
     display: block;
 }
 
+body{
+    position: relative;
+    width: auto;
+    height: 100vh;
+    display: block;
+    &uno{
+        background-color: $colorTercero;
+    }
+}
 a{
     text-decoration: unset;
     color:$colorPrimario;
