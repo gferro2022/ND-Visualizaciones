@@ -173,6 +173,7 @@ main .trabajos {
   max-width: 100%;
   grid-template-columns: repeat(4, 1fr);
   
+  
 }
 
 .tarjeta {
@@ -224,7 +225,7 @@ img.card_foto:hover {
 .card_descrip {
   text-align: center;
   padding-bottom: 20px;
-  width: 100%;
+  width: 90%;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -238,6 +239,25 @@ img.card_foto:hover {
   color: #5DC791;
 }
 
+.card_descrip2 {
+  text-align: left;
+  padding-bottom: 20px;
+  width: 70%;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  color: black;
+  padding-left: 20px;
+  margin-top: 20px;
+  height: 100px;
+ 
+}
+
+.card_descrip2 span {
+  font-weight: 900;
+  color: #5DC791;
+}
 .trabajos {
   height: auto;
   padding-left: 0%;
@@ -346,16 +366,16 @@ img.card_foto:hover {
   align-self: center;
 }
 
-.frase_trabajo_i1 h2 {
+.frase_trabajos_i1 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
 }
 
-.frase_trabajo_i2 h2 {
+.frase_trabajos_i2 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
 }
 
@@ -393,7 +413,7 @@ img.card_foto:hover {
 
 .nota_premios {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   height: 135px;
   width: 100%;
   padding-bottom: 20px;
@@ -405,11 +425,12 @@ img.card_foto:hover {
   line-height: 20px;
   justify-self: start;
   max-width: 100px;
+  height: 100px;
 }
 
 .texto_premios {
   line-height: 20px;
-  width: 45vw;
+  width: 40vw;
   justify-self: start;
 }
 
@@ -493,7 +514,10 @@ li.button {
 
 @media (max-width: 1000px) {
   .cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tarjeta {
+    width: 34vw;
   }
   .t2 {
     grid-template-columns: repeat(4, 1fr);
@@ -508,7 +532,7 @@ li.button {
     display: none;
   }
   .trabajos_flecha {
-    width: unset;
+    width: 34vw;
   }
 }
 @media (max-width: 768px) {
