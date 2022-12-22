@@ -541,6 +541,9 @@ li.button {
     width: 768px;
     max-width: 727px;
   }
+  .nota_premios{
+        height: 170px;
+    }
 }
 @media (max-width: 576px) {
   .cards {

@@ -455,6 +455,9 @@ main.trabajos{
         padding-bottom: 20px;
         border-top: #161717 solid 1px;
         align-items: center;
+        @media (max-width: $medium){
+            height: 170px;
+        }
         
         }
         
