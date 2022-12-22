@@ -254,6 +254,14 @@ img.card_foto:hover {
  
 }
 
+                    
+
+  @media (max-width: 576px){
+    .card_descrip2{
+      width: unset;}
+}
+  
+
 .card_descrip2 span {
   font-weight: 900;
   color: #5DC791;
